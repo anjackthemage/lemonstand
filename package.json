@@ -2,7 +2,7 @@
   "name": "lemonstand",
   "version": "0.0.0",
   "description": "Node.js implementation of Lemonade Stand (http://codenautics.com/lemonade/).",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
