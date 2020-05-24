@@ -2,12 +2,12 @@
  * 
  */
 
-var common = require('./public/common.js');
+var common = require('./public/shared/common.js');
 var Client = require('./client.js');// Should modularize these
 
 const express = require('express');
 var app = express();
-app.use(express.static('public'));
+app.use(express.static('./public'));
 
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);

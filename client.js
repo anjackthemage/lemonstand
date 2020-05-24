@@ -2,7 +2,7 @@
  * 
  */
 
-var common = require('./public/common.js');
+var common = require('./public/shared/common.js');
 
 class Client {// Should modularize this
     player = null;
@@ -10,10 +10,9 @@ class Client {// Should modularize this
     constructor(socket) {
         this.socket = socket;
         this.id = socket.id;
+        this.player;
 
         console.log('New client: ' + this.id);
-
-        this.player = new common.Player();
 
         socket.on('disconnect', () => {
             console.log('Connection closed to: ' + this.id);
@@ -23,6 +22,11 @@ class Client {// Should modularize this
             console.log('Message from client: ' + this.id);
             console.log(data);
         });
+
+        socket.on('player_init', (player_data) => {
+            this.player = player_data;
+            console.log(this.player);
+        })
     }
 }
 
