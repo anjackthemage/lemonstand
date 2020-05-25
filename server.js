@@ -2,7 +2,7 @@
  * 
  */
 
-var common = require('./public/shared/common.js');
+var common = require('./public/shared/player.js');
 var Client = require('./client.js');// Should modularize these
 
 const express = require('express');

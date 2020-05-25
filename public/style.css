@@ -1,0 +1,24 @@
+
+div.content {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.page_title {
+    text-align: center;
+}
+
+div.canvas_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.viewport {
+    border-style: solid;
+    width: 90%;
+    margin: auto;
+}

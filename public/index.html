@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="../socket.io/socket.io.js"></script>
-        <script src="shared/common.js"></script>
-        <script src="client/index.js"></script>
-    </head>
-    <body onload="initIndex()">
-        <h1>This is still a test page!</h1>
-    </body>
+  <head>
+    <title>LemonStand</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="shared/player.js"></script>
+    <script src="client/index.js"></script>
+  </head>
+  <body onload="initIndex()">
+    <div class="content">
+      <div class="page_title">
+        <h1>Welcome to LemonStand</h1>
+      </div>
+      <div class="canvas_container">
+        <canvas id="main_canvas" class="viewport"></canvas>
+      </div>
+    </div>
+  </body>
 </html>

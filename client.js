@@ -2,8 +2,11 @@
  * 
  */
 
-var common = require('./public/shared/common.js');
+var common = require('./public/shared/player.js');
 
+/**
+ * @class   Handles communication with a connected player.
+ */
 class Client {// Should modularize this
     player = null;
 
